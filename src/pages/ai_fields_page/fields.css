@@ -1,0 +1,242 @@
+.banner {
+  background-color: yellow;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Center content horizontally */
+  border-radius: 8px;
+  position: relative;
+}
+
+.banner-text {
+  margin: 0;
+  font-size: 1.2rem;
+  color: #333; /* Darker text for contrast */
+}
+
+.enroll-btn {
+  padding: 10px 20px;
+  background-color: #007bff; /* Blue background */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 20px; /* Space between text and button */
+  transition: background-color 0.3s;
+}
+
+.enroll-btn:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+
+
+
+.field-container {
+    display: flex;
+    align-items: flex-start;
+    max-width: 1400px;
+    margin: 80px auto;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .field-left {
+    flex: 1;
+    font-size: 1.2rem;
+    color: black;
+    min-width: auto;
+  }
+  
+  .field-right {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .responsive-image {
+    max-width: 100%; /* Ensures image doesn't overflow */
+    height: auto;
+  }
+
+
+  .cta-banner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:  #ffdada;
+    padding: 30px 50px;
+    border-radius: 10px;
+    max-width: 1300px;
+    margin: 30px auto;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .cta-content {
+    flex: 1;
+    color: #000000;
+  }
+  
+  .cta-content h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+  }
+  
+  .cta-content p {
+    font-size: 1.1rem;
+  }
+  
+  .cta-button {
+    margin-left: 60px;
+  }
+  
+  .contact-us-btn {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 25px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .contact-us-btn:hover {
+    background-color: #0056b3;
+  }
+
+
+  /* Container for Title and Description */
+.fields-and-domains-container {
+  margin-top: 50px;
+  padding: 20px;
+}
+
+.fields-and-domains-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.fields-and-domains-header h2 {
+  font-size: 2.5rem;
+  color: #000000;
+}
+
+
+/* Content Layout */
+.fields-and-domains-content {
+  display: flex;
+  max-width: 1400px;
+  margin :0 auto;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 30px;
+}
+
+/* Left Side: List and Button */
+.fields-list-and-button {
+  flex: 1;
+  max-width: 60%;
+}
+
+.fields-list-and-button ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 20px 0;
+}
+
+.fields-list-and-button ul li {
+  font-size: 1.1rem;
+  color: #444;
+  margin-bottom: 15px;
+  padding-left: 15px;
+  position: relative;
+}
+
+
+
+/* Right Side: Image */
+.fields-image {
+  flex: 1;
+  max-width: 35%;
+}
+
+.fields-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+
+.faq-section {
+  display: flex;
+  margin: 40px auto;
+  padding: 20px;
+  max-width: 1400px;
+  border-radius: 8px;
+}
+
+.faq-container {
+  display: flex;
+  width: 100%;
+}
+
+.faq-image {
+  flex: 1;
+  margin-right: 60px;
+}
+
+.faq-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.faq-questions {
+  flex: 2;
+}
+
+.faq-questions h2 {
+  margin-bottom: 20px;
+  font-size: 1.8rem;
+  color: #333;
+}
+
+.faq-item {
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  border: 1px solid #ddd;
+  margin-bottom: 10px;
+  transition: background-color 0.3s;
+}
+
+.faq-item:hover {
+  background-color: #f1f1f1;
+}
+
+.faq-question {
+  font-weight: bold;
+  color: #333;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.faq-answer {
+  margin-top: 10px;
+  color: #555;
+}
+
+.chevron-icon {
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.active .faq-question {
+  color: #007bff;
+}
