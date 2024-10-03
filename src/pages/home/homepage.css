@@ -1,0 +1,675 @@
+.boady{
+  background-color: white;
+}
+.hero-section {
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  padding: 50px;
+  background: linear-gradient(to right, rgb(2, 70, 138), #002458);
+  min-height: 75vh; 
+  margin: 0 auto;
+  text-align: center; 
+  color: white; 
+}
+
+.hero-content h1 {
+  font-size: 3rem; 
+  margin-bottom: 20px;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  max-width: 80%;
+  margin: auto; 
+  margin-bottom: 30px; 
+}
+
+.button-container {
+  display: flex; 
+  justify-content: center; 
+  margin-top: 20px; 
+}
+
+.get-started-button,
+.investor-button {
+  background-color: #4370d8; /* Light button background */
+  color: #ffffff; /* Dark text color for buttons */
+  padding: 12px 35px; /* Padding for buttons */
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.2rem; /* Font size for buttons */
+  margin-right: 15px; /* Space between buttons */
+  transition: background-color 0.3s; /* Smooth background transition */
+}
+
+.investor-button {
+  margin-right: 0; /* Remove right margin for the last button */
+}
+
+/* Add hover effects */
+.get-started-button:hover,
+.investor-button:hover {
+  background-color: #0558cd; /* Dark background on hover */
+  color: white; /* White text on hover */
+}
+
+.marquee-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 40px; /* Add spacing from the button container */
+}
+
+
+.scroll {
+  max-width: 1200px; /* Ensure it takes the full width */
+  overflow: hidden; /* Hide overflow to create the marquee effect */
+  position: relative;
+}
+
+.scroll-content {
+  display: flex; /* Use flexbox for horizontal layout */
+  white-space: nowrap; /* Prevent line breaks */
+  animation: scrollText 30s linear infinite; /* Adjust animation duration as needed */
+}
+
+.scroll span {
+  margin-right: 50px; /* Add spacing between items */
+  font-size: 1.6rem;
+  color: #ffffff; /* Text color */
+}
+
+@keyframes scrollText {
+  0% {
+    transform: translateX(0); /* Start position */
+  }
+  100% {
+    transform: translateX(-50%); /* Move left by half the width of the scroll-content */
+  }
+}
+
+
+.who-we-are-section {
+  padding: 40px; /* Spacing around the section */
+  border-radius: 8px; /* Slightly rounded corners */
+  max-width: 1300px; /* Limit the width for readability */
+  margin: 5px auto;
+}
+
+.who-we-are-section h2 {
+  font-size: 3rem; /* Large title */
+  margin-bottom: 20px; /* Space below the title */
+  text-align: center;
+  color: #02203c; /* Dark text color */
+}
+
+.who-we-are-section p {
+  font-size: 1.3rem; /* Standard paragraph font size */
+  margin-bottom: 15px;
+  line-height: 1.4; /* Improve readability */
+}
+.why-choose-us-container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+.why-choose-us-left {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.why-choose-us-right {
+  flex: 1;
+  align-items: flex-start;
+}
+
+.why-choose-us-right ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.why-choose-us-right ul li span {
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: #02203c;
+}
+
+.why-choose-us-right ul li p {
+  font-size: 1.1rem;
+  margin: 2px;
+  font-weight:normal;
+  margin-left: 10px;
+}
+
+.why-image {
+  max-width: 60%;
+  height: auto;
+  border-radius: 20px;
+}
+
+.b-container {
+  background: linear-gradient(to right, rgb(2, 70, 138), #002458); /* Dark background to make text pop */
+  padding: 60px 20px; /* Padding for space around the content */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 40px 0 20px 0;
+  color: #fff; /* White text for contrast */
+}
+
+.b-content h3 {
+  font-size: 2.5rem; /* Adjust text size */
+  line-height: 1.4; /* Space between lines */
+  font-weight: 500; /* Medium weight for readability */
+  max-width: 1000px; /* Limit the text width */
+  margin: 0; /* Remove default margins */
+}
+
+
+.ai-fields-section {
+  padding: 40px; 
+  border-radius: 8px; 
+  max-width: 1300px; 
+  margin: 40px auto; 
+}
+
+.ai-fields-section h3 {
+  font-size: 3rem;
+  margin-bottom: 15px;
+  text-align: center; 
+  color: #02203c;
+}
+
+.ai-fields-section p {
+  font-size: 1.3rem; 
+  line-height: 1.4; 
+}
+
+.fields-container {
+  display: flex; 
+  margin-top: 20px; 
+}
+
+.sectors-container {
+  display: flex; 
+  flex-direction: column; 
+  position: relative; 
+  width: 20%; /* Adjust the width as needed */
+  padding-right: 20px; /* Space between the button and content */
+}
+
+.vertical-line {
+  position: absolute;
+  left: -10px; /* Adjust this based on the layout */
+  width: 4px; /* Line width */
+  height: 100%; 
+  background-color: #fff; /* White background for the line */
+  z-index: 0; /* Behind the sector names */
+}
+
+.loading-line {
+  background-color: #02203c; /* Dark blue color for the loading effect */
+  animation: loading 0.5s ease-in-out forwards; /* Animation for loading */
+}
+
+@keyframes loading {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 100%;
+  }
+}
+
+.sector-item {
+  padding: 5px 20px; 
+  cursor: pointer; 
+  font-size: 1.4rem;
+  font-weight: 500;
+  border-radius: 10px;
+  transition: background-color 0.3s; 
+  position: relative; /* For positioning the loading line */
+  z-index: 1; /* On top of the line */
+}
+
+.sector-item:hover {
+  background-color: #efeeee;
+   /* Highlight on hover */
+}
+
+/* Active button style */
+.sector-item.active {
+  background-color: #efeeee; /* Grey background for active button */
+}
+
+
+.sector-content {
+  margin-left: 40px; /* Spacing from the sectors */
+  flex: 1; 
+}
+
+.sector-content h3 {
+  font-size: 2rem; 
+  margin-bottom: 10px; 
+}
+
+.sector-content p {
+  font-size: 1.2rem; 
+  line-height: 1.6; 
+}
+
+
+.join-banner-container {
+  background:linear-gradient(to right, rgb(2, 70, 138), #002458);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 20px;
+  position: relative;
+  margin-bottom:80px ;
+}
+
+.join-banner-content {
+  max-width: 1000px;
+  text-align: center;
+  color: white;
+}
+
+.join-banner-title {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.join-banner-paragraph {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+.join-banner-button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 25px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.join-banner-button:hover {
+  background-color: #0056b3;
+}
+
+
+.h-contact-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 40px;
+  max-width: 1300px;
+  margin: 60px auto;
+}
+
+.h-contact-left {
+  flex: 1;
+  padding-right: 20px;
+}
+.h-contact-left h3{
+  font-size: 2rem;
+  color: #02203c;
+}
+.h-contact-paragraph {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+.h-contact-right {
+  flex: 1;
+  padding-left: 20px;
+}
+
+.h-contact-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.h-contact-form label {
+  margin-bottom: 10px;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.h-contact-form input,
+.h-contact-form textarea {
+  margin-bottom: 20px;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.h-contact-form textarea {
+  resize: vertical;
+  height: 150px;
+}
+
+.h-contact-submit-button {
+  background-color: #007bff;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.h-contact-submit-button:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .h-contact-container {
+    flex-direction: column;
+  }
+
+  .h-contact-left,
+  .h-contact-right {
+    padding: 0;
+  }
+}
+
+@media (max-width:480px){
+  .h-contact-container{
+    margin-top: 20px;
+  }
+}
+
+/* Media Query for devices with a max-width of 768px (tablets and phones) */
+@media (max-width: 768px) {
+  .hero-section {
+    padding: 30px; /* Adjust minimum height for smaller screens */
+  }
+
+  .hero-content h1 {
+    font-size: 2.5rem; /* Decrease font size for headings */
+    margin-bottom: 15px;
+  }
+
+  .hero-content p {
+    font-size: 1rem; /* Decrease font size for paragraph */
+    max-width: 90%; /* Make the text container wider */
+    margin-bottom: 20px;
+  }
+
+  .get-started-button,
+  .investor-button {
+    padding: 10px 25px; /* Adjust button padding */
+    font-size: 1rem; /* Decrease button font size */
+    margin-bottom: 10px; /* Add margin between stacked buttons */
+  }
+
+  .investor-button {
+    margin-right: 0;
+  }
+
+  .marquee-section {
+    margin-top: 30px; /* Adjust spacing for marquee section */
+  }
+  .scroll{
+    max-width: 450px;
+  }
+  .scroll-content {
+    animation: scrollText 20s linear infinite; /* Speed up the animation for smaller screens */
+  }
+
+  .scroll span {
+    font-size: 1.2rem; /* Decrease font size for scrolling text */
+    margin-right: 30px; /* Reduce spacing between scrolling items */
+  }
+}
+
+/* Media Query for devices with a max-width of 480px (mobile phones) */
+@media (max-width: 480px) {
+  .hero-section {
+    padding: 20px;
+  }
+
+  .hero-content h1 {
+    font-size: 2rem; /* Further decrease font size for headings */
+  }
+
+  .hero-content p {
+    font-size: 1rem;
+  }
+  .scroll{
+    max-width: 350px;
+  }
+  .get-started-button,
+  .investor-button {
+    padding: 8px 20px; /* Adjust padding for smaller buttons */
+    font-size: 1rem; /* Further decrease button font size */
+  }
+
+  .scroll span {
+    font-size: 1rem; /* Decrease font size for scrolling text */
+    margin-right: 20px; /* Reduce spacing further */
+  }
+}
+
+/* Media Query for devices with a max-width of 768px (tablets and phones) */
+@media (max-width: 768px) {
+  .who-we-are-section {
+    padding: 30px; /* Adjust padding for smaller screens */
+  }
+
+  .who-we-are-section h2 {
+    font-size: 2.4rem; /* Decrease font size for headings */
+  }
+
+  .who-we-are-section p {
+    font-size: 1.1rem; /* Decrease paragraph font size */
+  }
+
+  .why-choose-us-container {
+    flex-direction: column; /* Stack the image and content vertically */
+    padding: 20px; /* Adjust padding for smaller screens */
+  }
+
+  .why-choose-us-left,
+  .why-choose-us-right {
+    flex: unset; /* Remove flex-basis so elements can stack */
+    width: 100%; /* Full width for both image and content */
+    margin-bottom: 20px; /* Add space between image and content */
+  }
+
+  .why-image {
+    max-width: 80%; /* Increase the image size for better visibility */
+    margin: 0 auto; /* Center the image */
+  }
+
+  .why-choose-us-right ul li span {
+    font-size: 1.3rem; /* Slightly reduce the font size */
+  }
+
+  .why-choose-us-right ul li p {
+    font-size: 1rem; /* Reduce paragraph font size */
+    margin-left: 0; /* Remove extra margin for smaller screens */
+  }
+}
+
+/* Media Query for devices with a max-width of 480px (mobile phones) */
+@media (max-width: 480px) {
+  .who-we-are-section {
+    padding: 20px; /* Further reduce padding for smaller screens */
+  }
+
+  .who-we-are-section h2 {
+    font-size: 2rem;
+    line-height: 1.2; /* Further decrease heading size for phones */
+  }
+
+  .why-image {
+    max-width: 100%; /* Allow the image to take full width on small screens */
+  }
+
+  .why-choose-us-right ul li span {
+    font-size: 1.2rem; /* Further reduce span font size */
+  }
+
+  .why-choose-us-right ul li p {
+    font-size: 0.9rem; /* Further reduce paragraph size */
+  }
+}
+
+
+/* Media Query for devices with a max-width of 768px (tablets and phones) */
+@media (max-width: 768px) {
+  .ai-fields-section {
+    padding: 20px; /* Adjust padding for smaller screens */
+  }
+
+  .ai-fields-section h3 {
+    font-size: 2.4rem; /* Decrease font size for smaller screens */
+  }
+
+  .ai-fields-section p {
+    font-size: 1.1rem; /* Decrease paragraph font size */
+  }
+
+  .fields-container {
+    flex-direction: column; /* Stack sectors and content vertically */
+  }
+
+  .sectors-container {
+    width: 100%; /* Full width for the sectors on small screens */
+    padding-right: 0; /* Remove extra padding */
+    margin-bottom: 20px; /* Add margin between sectors and content */
+  }
+
+  .vertical-line {
+    left: -5px; /* Adjust position for smaller screens */
+    width: 2px; /* Narrow the line */
+  }
+
+  .sector-item {
+    padding: 10px 15px; /* Adjust padding */
+    font-size: 1.2rem; /* Slightly reduce font size */
+  }
+
+  .sector-content {
+    margin-left: 0; /* Remove left margin */
+    margin-top: 20px; /* Add space between sectors and content */
+  }
+
+  .sector-content h3 {
+    font-size: 1.8rem; /* Decrease content heading size */
+  }
+
+  .sector-content p {
+    font-size: 1.1rem; /* Adjust content paragraph size */
+  }
+}
+/* Media Query for devices with a max-width of 480px (mobile phones) */
+@media (max-width: 480px) {
+  .ai-fields-section {
+    padding: 20px; /* Adjust padding for smaller screens */
+  }
+  .ai-fields-section h3{
+    font-size: 2rem;
+    line-height: 1.2;
+  }
+  .fields-container {
+    display: flex;
+    flex-direction: column; /* Stack sectors and content vertically */
+  }
+
+  .sectors-container {
+    display: grid; /* Use grid layout */
+    grid-template-columns: repeat(3, 1fr); /* 2 buttons per row */
+    gap: 10px; /* Space between buttons */
+    width: 100%; /* Full width for the sectors on small screens */
+    margin-bottom: 10px;
+    margin-top: 20px; /* Space between sectors and content */
+  }
+
+  .sector-item {
+    padding: 10px 15px; /* Adjust padding */
+    font-size: 1rem; /* Font size for buttons */
+    cursor: pointer; /* Pointer cursor for buttons */
+    border-radius: 5px; /* Rounded corners for buttons */
+    background-color: #f5f5f5; /* Background color for buttons */
+    transition: background-color 0.3s; /* Transition effect */
+  }
+
+  .sector-item:hover {
+    background-color: #efeeee; /* Highlight on hover */
+  }
+
+  /* Active button style */
+  .sector-item.active {
+    background-color: #d0d0d0; /* Grey background for active button */
+  }
+
+  .sector-content {
+    margin-top: 20px; /* Space between sectors and content */
+  }
+
+  .sector-content h3 {
+    font-size: 2rem;
+    line-height: 1.2; /* Reduce heading size for mobile */
+  }
+
+  .sector-content p {
+    font-size: 1rem; /* Further adjust paragraph size */
+  }
+}
+
+
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .join-banner-title {
+    font-size: 2.2rem;
+  }
+
+  .join-banner-paragraph {
+    font-size: 1rem;
+  }
+
+  .join-banner-button {
+    padding: 8px 18px;
+  }
+}
+
+@media(max-width:480px){
+  .join-banner-container{
+    margin-bottom: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .b-content h3 {
+    font-size: 1.8rem; /* Smaller font size for mobile */
+  }
+}
+@media (max-width:480px){
+  .b-content h3{
+    font-size: 1.7rem;
+  }
+}

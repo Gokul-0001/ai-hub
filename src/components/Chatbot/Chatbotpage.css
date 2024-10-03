@@ -1,0 +1,121 @@
+.chatbot {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 999;
+  }
+  
+  /* Chatbot icon styling */
+  .chatbot-icon {
+    background-color: #007bff;
+    color: #fff;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-size: 1rem;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .chatbot-icon:hover {
+    background-color: #0056b3;
+  }
+  .chatbot-icon svg {
+    width: 30px;  /* Set desired width for the icon */
+    height: 25px; /* Set desired height for the icon */
+  }
+  /* Chat window container */
+  .chatbot-window {
+    width: 320px;
+    height: 400px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+    position: fixed;
+    bottom: 100px;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
+  
+  /* Chat header styling */
+  .chatbot-header {
+    background-color: #007bff;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+  }
+  
+  /* Chat body for messages */
+  .chatbot-body {
+    padding: 10px;
+    background-color: #fff;
+    flex-grow: 1;
+    overflow-y: auto;
+  }
+  
+  
+  .chat-message {
+    margin: 10px 0;
+    padding: 8px 12px;
+    font-size: 1rem;
+    border-radius: 15px;
+    width: fit-content;
+  }
+  
+  .chat-message.user {
+    background-color: #007bff;
+    color: white;
+    margin-left: auto;
+    font-size: 1rem;
+  }
+  
+  .chat-message.bot {
+    background-color: #f1f1f1;
+    color: black;
+  }
+  
+  .chatbot-footer {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-top: 1px solid #ddd;
+  }
+  
+  .chatbot-footer input {
+    flex-grow: 1;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    font-size: 1rem;
+    outline: none;
+  }
+  
+  .chatbot-footer button {
+    background-color: transparent;
+    border: none;
+    color: #007bff;
+    font-size: 1.2rem;
+    cursor: pointer;
+    outline: none;
+  }
+  
+  .chatbot-footer button:hover {
+    color: #0056b3;
+  }
+  
+  /* Custom scroll bar styling for chat body */
+  .chatbot-body::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  .chatbot-body::-webkit-scrollbar-thumb {
+    background-color: #ccc;
+    border-radius: 10px;
+  }

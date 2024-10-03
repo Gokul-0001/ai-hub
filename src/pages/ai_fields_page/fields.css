@@ -1,0 +1,340 @@
+
+.field-container {
+    display: flex;
+    align-items: center;
+    max-width: 1300px;
+    margin: 30px auto;
+    min-height: 70vh;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .field-left {
+    flex: 1;
+    min-width: auto;
+  }
+  .field-left h1{
+    font-size: 3rem;
+    color: #02203c;
+  }
+  .field-left p{
+    font-size: 1.3rem;
+  }
+  .field-right {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .responsive-image {
+    max-width: 80% !important; /* Ensures image doesn't overflow */
+    height: auto !important;
+   
+  }
+  
+
+  .cta-banner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background:linear-gradient(to right, rgb(2, 70, 138), #002458);
+    padding: 30px 50px;
+    border-radius: 10px;
+    max-width: 1300px;
+    margin: 30px auto;
+  }
+  
+  .cta-content {
+    flex: 1;
+    color: white;
+  }
+  
+  .cta-content h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+  }
+  
+  .cta-content p {
+    font-size: 1.1rem;
+  }
+  
+  .cta-button {
+    margin-left: 60px;
+  }
+  
+  .contact-us-btn {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 25px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .contact-us-btn:hover {
+    background-color: #0056b3;
+  }
+
+
+  /* Container for Title and Description */
+.fields-and-domains-container {
+  margin-top: 50px;
+  padding: 20px;
+}
+
+.fields-and-domains-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.fields-and-domains-header h2 {
+  font-size: 3rem;
+  color: #02203c;
+}
+
+
+/* Content Layout */
+.fields-and-domains-content {
+  max-width: 1400px;
+  margin :0 auto;
+  align-items: flex-start;
+  gap: 30px;
+}
+
+.fields-list-and-button ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 20px 0;
+}
+.fields-list-and-button ul li strong{
+  font-size: 1.4rem;
+  color: #02203c;
+}
+.fields-list-and-button ul li {
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+  padding-left: 15px;
+  position: relative;
+}
+
+
+
+/* Right Side: Image */
+.fields-image {
+  flex: 1;
+  max-width: 35%;
+}
+
+.fields-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+
+.faq-section {
+  margin: 40px auto;
+  max-width: 1300px;
+  border-radius: 8px;
+}
+
+.faq-container h3{
+  font-size: 3rem;
+  color:#02203c ;
+  text-align: center;
+  padding: 40px;
+}
+
+
+
+.faq-item {
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  border: 1px solid #ddd;
+  margin-bottom: 10px;
+  transition: background-color 0.3s;
+}
+
+.faq-item:hover {
+  background-color: #f1f1f1;
+}
+.faq-questions{
+  font-size: 1.3rem;
+}
+.faq-question {
+  font-weight: bold;
+  color:#02203c;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.faq-answer {
+  margin-top: 10px;
+}
+
+.chevron-icon {
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.active .faq-question {
+  color: #007bff;
+}
+
+
+/* Media Query for devices with a max-width of 480px (mobile phones) */
+@media (max-width: 480px) {
+  .field-container {
+    flex-direction: column; /* Stack elements vertically */
+    align-items: flex-start; /* Align items to the start */
+    padding: 10px; /* Add some padding */
+  }
+
+  .field-left {
+    flex: none; /* Reset flex to prevent shrinking */
+    width: 100%; /* Full width for the left section */
+    margin-bottom: 20px; /* Space between sections */
+  }
+
+  .field-left h1 {
+    font-size: 2rem; /* Reduce heading size for mobile */
+    line-height: 1.2; /* Adjust line height for readability */
+  }
+
+  .field-left p {
+    font-size: 1.1rem; /* Reduce paragraph font size for mobile */
+    line-height: 1.4; /* Increase line height for better readability */
+  }
+
+  .field-right {
+    flex: none; /* Reset flex for the right section */
+    width: 100%; /* Full width for the right section */
+    display: flex;
+    justify-content: center; /* Center the image */
+    margin-bottom: 20px; /* Add space below the image */
+  }
+
+  .responsive-image {
+    max-width: 100%; /* Ensure image fits within the container */
+    height: auto; /* Maintain aspect ratio */
+  }
+}
+
+/* Media Query for devices with a max-width of 480px (mobile phones) */
+@media (max-width: 480px) {
+  .fields-and-domains-container {
+    margin-top: 0;
+    padding: 10px; /* Reduce padding for small screens */
+  }
+
+  .fields-and-domains-header h2 {
+    font-size: 2rem; /* Decrease heading size for mobile */
+  }
+
+  .fields-and-domains-content {
+    margin-top: 0;
+    flex-direction: column; /* Stack content vertically */
+    align-items: center; /* Center content */
+  }
+
+  .fields-list-and-button {
+    max-width: 100%; /* Full width for list on mobile */
+    margin-bottom: 20px; /* Space below the list */
+  }
+
+  .fields-list-and-button ul li {
+    font-size: 1.1rem; /* Reduce font size for list items */
+    margin-bottom: 10px; /* Reduce margin for list items */
+    padding-left: 0; /* Remove left padding */
+  }
+  .fields-list-and-button ul li strong{
+    font-size: 1.3rem;
+  }
+  .fields-image {
+    max-width: 100%; /* Full width for the image on mobile */
+    display: flex;
+    justify-content: center; /* Center the image */
+  }
+
+  .fields-image img {
+    max-width: 90%; /* Ensure image fits within mobile width */
+  }
+}
+
+/* Media Query for devices with a max-width of 480px (mobile phones) */
+@media (max-width: 480px) {
+  .cta-banner {
+    flex-direction: column; /* Stack content vertically */
+    align-items: flex-start; /* Align items to the start */
+    padding: 20px; /* Reduce padding for mobile */
+  }
+
+  .cta-content {
+    margin-bottom: 15px; /* Add space below the content */
+  }
+
+  .cta-content h2 {
+    font-size: 2rem; /* Reduce heading size for mobile */
+    margin-bottom: 10px; /* Adjust margin for mobile */
+  }
+
+  .cta-content p {
+    font-size: 1.1rem; /* Reduce paragraph font size */
+  }
+
+  .cta-button {
+    margin-left: 0; /* Remove left margin for mobile */
+    align-self: flex-start; /* Align button to start */
+  }
+
+  .contact-us-btn {
+    padding: 8px 20px; /* Adjust padding for smaller buttons */
+    font-size: 1rem; /* Reduce button font size */
+  }
+}
+
+
+/* Media Query for devices with a max-width of 480px (mobile phones) */
+@media (max-width: 480px) {
+  .faq-section {
+    margin: 20px auto; /* Reduce margin for mobile */
+    padding: 10px; /* Add padding for better spacing */
+  }
+
+  .faq-container h3 {
+    font-size: 2rem;
+    line-height: 1.2; /* Decrease heading font size */
+    padding: 20px; /* Reduce padding around the heading */
+  }
+
+  .faq-item {
+    padding: 10px; /* Reduce padding inside FAQ items */
+    margin-bottom: 8px; /* Reduce spacing between FAQ items */
+  }
+
+  .faq-questions {
+    font-size: 1.1rem; /* Decrease font size for the questions */
+  }
+
+  .faq-question {
+    font-weight: bold; /* Keep bold for questions */
+    font-size: 1.1rem; /* Adjust font size */
+  }
+
+  .faq-answer {
+    margin-top: 5px; /* Reduce margin above answers */
+    font-size: 1rem; /* Adjust answer font size */
+  }
+
+  .chevron-icon {
+    font-size: 1rem; /* Adjust chevron icon size */
+  }
+}
+

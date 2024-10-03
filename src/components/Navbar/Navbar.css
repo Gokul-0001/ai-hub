@@ -1,0 +1,112 @@
+/* src/Navbar.css */
+.navbar {
+  width: 100%; 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(to right, rgb(2, 70, 138), #002458);
+  padding: 0.5rem 8rem;
+  box-sizing: border-box; /* Ensure padding is included in the width */
+  position: fixed; /* Make navbar fixed so it stays on top */
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000; /* Ensure it's above other content */
+}
+
+.navbar-logo {
+  font-size: 1.5rem;
+}
+.navbar-logo a{
+  text-decoration: none;
+  color: #ffffff;
+}
+.nav-links {
+  list-style: none;
+  display: flex; /* Display links in a row by default */
+  gap: 2rem;
+}
+
+.nav-links li {
+  display: flex;
+  align-items: center;
+}
+
+.nav-links a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.login-button {
+  background-color: #4370d8;
+  border: none;
+  color: white;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+
+/* Hide mobile menu by default */
+.nav-links-mobile {
+  display: none; /* Hidden by default */
+}
+
+/* Hide the hamburger icon on larger screens */
+.mobile-menu-icon {
+  display: none;
+  font-size: 1.7rem;
+  color: #000000;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* Mobile View */
+@media (max-width: 768px) {
+  .navbar{
+    padding: 0.5rem 1rem;
+  }
+  .nav-links {
+    display: none;
+     /* Hide desktop nav links */
+  }
+  .nav-links-mobile {
+    display: flex;
+    flex-direction: column; /* Stack links vertically */
+    position: fixed; /* Position the menu to slide in */
+    top: 60px; /* Adjust as needed */
+    left: -120%; /* Fully hide off-screen to the left initially */
+    background-color: #ffffff;
+    width: 100%; /* Full width */
+    height: calc(100% - 70px); /* Full height minus the top position */
+    padding: 1rem;
+    text-align: center;
+    transition: left 0.3s ease; /* Smooth sliding effect */
+    z-index: 1000; /* Ensure it's above other content */
+  }
+
+  .nav-links-mobile.open {
+    left: 0; /* Slide in when open */
+  }
+
+  .nav-links-mobile li {
+    margin: 1rem 0;
+    list-style: none;
+    
+  }
+  .nav-links-mobile li a{
+    text-decoration: none;
+    color:black;
+  }
+  .mobile-menu-icon {
+    display: block; /* Show the icon on mobile view */
+  }
+
+  /* Change the icon to a close icon when menu is open */
+  .mobile-menu-icon.open::before {
+    content: '×'; /* Unicode for close icon */
+  }
+  
+  .mobile-menu-icon::before {
+    content: '☰'; /* Unicode for hamburger icon */
+  }
+}
